@@ -59,10 +59,5 @@ const createPokemonCard = (pokemon) => {
     pokeContainer.appendChild(pokemonCard);
 }
 
-fetchPokemons()
-    .then(() => {
-        console.log("Pokédex fully loaded and ready!");
-    })
-    .catch(error => {
-        console.error("Failed to initialize Pokédex:", error);
-    });
+
+fetchPokemons();
